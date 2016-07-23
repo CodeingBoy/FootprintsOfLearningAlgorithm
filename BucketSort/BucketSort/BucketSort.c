@@ -4,7 +4,7 @@
 #include <limits.h>
 #include <stdlib.h>
 
-#define VERBOSE 1
+#define VERBOSE 0
 
 void BucketSort(int n, int nums[])
 {
