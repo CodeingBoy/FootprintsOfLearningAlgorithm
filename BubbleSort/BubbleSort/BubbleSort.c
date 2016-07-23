@@ -61,6 +61,9 @@ int main(void)
     printf("After being sorted :");
     printNums(numCount, nums);
 
+    // dont forget to free space
+    free(nums);
+
     printf("Press any key to exit");
     getchar();
     getchar();
