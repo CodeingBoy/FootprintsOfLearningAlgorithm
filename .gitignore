@@ -1,12 +1,11 @@
 ﻿################################################################################
-# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+# This .gitignore file had been modified for ignore some useless files
 ################################################################################
 
-/BucketSort/BucketSort/Debug
-/BucketSort/Debug
-/BucketSort/BucketSort.VC.VC.opendb
-/BucketSort/BucketSort.VC.db
-/BucketSort/BucketSort.sln
-/BucketSort/.vs/BucketSort/v14/.suo
-/BucketSort/BucketSort/BucketSort.vcxproj.filters
-/BucketSort/BucketSort/BucketSort.vcxproj
+*Debug
+*.opendb
+*.VC.db
+*.sln
+*.suo
+*.vcxproj.filters
+*.vcxproj
