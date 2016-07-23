@@ -53,6 +53,8 @@ void BucketSort(int n, int nums[])
         }
         j++;
     }
+
+    free(buckets);
 }
 
 void printNums(int n, int nums[])
@@ -83,6 +85,9 @@ int main(void)
 
     printf("After being sorted :");
     printNums(numCount, nums);
+
+    // dont forget to free space
+    free(nums);
 
     printf("Please press any key to exit");
     getchar();
