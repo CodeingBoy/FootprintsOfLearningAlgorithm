@@ -22,12 +22,15 @@ void Floyd_Warshall(){
         for(int a_index = 0;a_index < SIZE;a_index++){
             for(int b_index = 0;b_index < SIZE;b_index++){
                 if(graph[a_index][b_index] > graph[a_index][middle_index] + graph[middle_index][b_index]){
+#ifdef VERBOSE
+                    printf("Found %d -> %d -> %d has a shorter way, whose distance is %d\n", a_index + 1, middle_index + 1, b_index + 1, graph[a_index][middle_index] + graph[middle_index][b_index]);
+#endif
                     graph[a_index][b_index] = graph[a_index][middle_index] + graph[middle_index][b_index];
                 }
             }
         }
 #ifdef VERBOSE
-        printf("After %d:\n", middle_index);
+        printf("After %d:\n", middle_index + 1);
         print_graph();
         printf("\n");
 #endif
